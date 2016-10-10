@@ -1,8 +1,15 @@
-<%= image_tag @user.photo %>
-<%= @user.name %>
-
-<%= pluralize(@user.posts.count, 'post') %>
-
-<% @user.posts.each do |post| %>
-    <%= image_tag post.photo %>
-<% end %>
+<div id= "page-wrap-prof">
+    <div class= "post_box">
+        <div class= "prof_header">
+            <%= image_tag @user.photo, class: 'prof_pic' %>
+            <%= @user.name %>
+            
+            <%= pluralize(@user.posts.count, 'post') %>
+        </div>
+        
+        <% @user.posts.each do |post| %>
+            <%= image_tag post.photo, class: 'photo_prof' %>
+        <% end %>
+        
+    </div>
+</div>

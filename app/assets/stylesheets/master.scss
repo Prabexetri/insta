@@ -13,3 +13,100 @@ nav {
   font-size: 26px;
   vertical-align: middle;
 }
+
+.nav_links {
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 17px;
+  font-family: 'Almendra SC', serif;
+}
+
+.nav_wrapper {
+  line-height: 78px;
+}
+
+.fa {
+    color: #337ab7;
+}
+
+.prof_pic_small {
+    height: 45px;
+    width: 45px;
+}
+
+.photo {
+    width: 100%;
+    max-height: 100%;
+}
+
+.post_box {
+  background-color: white;
+  border: 1px solid #edeeee;
+  border-radius: 3px;
+  margin: 60px 0px;
+  margin-left: -1px;
+  margin-right: -1px;
+  height: 100%;
+}
+
+.post_header{
+  height: 64px;
+  padding: 14px 20px;
+  font-weight: 600;
+}
+
+.timestamp {
+    color: #a5a7aa;
+    font-weight: 500;
+}
+
+.post_body{
+  padding: 10px 24px 0px 10px;
+}
+
+.post_opt {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 10px;
+  
+}
+
+.post_comments {
+  padding: 15px 25px;
+}
+
+p {
+    margin: 5px 0 0;
+}
+
+.del {
+    font-size: 16px;
+}
+
+#page-wrap {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.prof_pic {
+    height: 200px;
+    width: 200px;
+}
+
+.photo_prof {
+    width: 33%;
+    height: 350px;
+    padding: 30px 30px;
+}
+
+#page-wrap-prof {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.prof_header {
+    font-size: 30px;
+}
