@@ -5,6 +5,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
 gem 'carrierwave'
 gem 'simple_form'
+gem 'acts_as_votable', '~> 0.10.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'

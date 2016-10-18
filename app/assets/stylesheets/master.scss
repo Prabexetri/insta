@@ -30,11 +30,6 @@ nav {
     color: #337ab7;
 }
 
-.prof_pic_small {
-    height: 45px;
-    width: 45px;
-}
-
 .photo {
     width: 100%;
     max-height: 100%;
@@ -90,23 +85,73 @@ p {
     margin: 0 auto;
 }
 
+
+
+.page_wrap_prof {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.prof_header{
+  height: 100%;
+  padding: 60px 20px 0px;
+  margin-bottom: 45px;
+}
+
+.username {
+  color: #4b4f54;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  font-family: 'Almendra SC', serif;
+}
+
+.count{
+  color: #34373b;
+  font-weight: 600;
+}
+
+.prof_show {
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+}
+
+.prof_post_box {
+  margin-bottom: 50px;
+}
+
+.user_edit_button {
+  margin-top: 25px;
+  border-color: #818488;
+  color: #818488;
+}
+
 .prof_pic {
-    height: 200px;
-    width: 200px;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
 }
 
-.photo_prof {
-    width: 33%;
-    height: 350px;
-    padding: 30px 30px;
+.prof_pic_small {
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
 }
 
-#page-wrap-prof {
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
+.btn-default {
+  background: #337ab7;
+  color: #fff;
+  border: 0px;
+  font-size: 12px;
 }
 
-.prof_header {
-    font-size: 30px;
+.btn-default:hover {
+  background: #2d5475;
+  color: #eee;
+  border: 0px;
+  outline: none;
 }
+

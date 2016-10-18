@@ -22,13 +22,6 @@ class PostsController < ApplicationController
             render :new, status: :unprocessable_entity
         end
     end
-
-    private
-    
-    def post_params
-        params.require(:post).permit(:user_id, :photo, :description)
-    end
-    
     
     def edit
         @post = Post.find(params[:id])
@@ -44,16 +37,24 @@ class PostsController < ApplicationController
         end
     end
     
-    private
-
-    def is_owner?
-        redirect_to root_path if Post.find(params[:id]).user != current_user
-    end
-    
     def destroy
       @post = Post.find(params[:id])
       @post.destroy
       redirect_to root_path
     end
+    
+    # anything below this becomes a private method, so it can't be accessed outside this file
+    # We can't have the edit, update, and destroy methods under private, since we need them outside of this file
+    private
+    
+    def post_params
+        params.require(:post).permit(:user_id, :photo, :description)
+    end
+    
+    def is_owner?
+        redirect_to root_path if Post.find(params[:id]).user != current_user
+    end
+    
+
     
 end
